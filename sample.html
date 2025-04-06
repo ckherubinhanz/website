@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 20;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        header img {
+            width: 120px; 
+            position: absolute;
+            right: -1000%;
+            left: 210px;
+            top: 25px;
+            bottom: -20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgb(2, 0, 13);
+        }
+        h2 {
+            margin-top: 20px;
+            color: black; 
+        }
+        .menu-item {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+            display: flex; 
+            align-items: center;
+        }
+        .menu-item img {
+            width: 100px; 
+            height: auto; 
+            border-radius: 5px; 
+            margin-right: 20px; 
+        }
+        .menu-item:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        (max-width: 768px) {
+            nav {
+                flex-direction: column; 
+            }
+            nav a {
+                padding: 10px;
+                text-align: left; 
+            }
+            .menu-item {
+                flex-direction: column; 
+                align-items: flex-start;
+            }
+            .menu-item img {
+                margin-bottom: 10px; 
+            
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <img src="logo.png" alt="logo crt">
+</div>
+    <h1>Welcome to CRT Restaurant</h1>
+    <p>Your favorite place for gourmet meals</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to Delicious Restaurant, where we serve the finest dishes made from the freshest ingredients. Join us for a memorable dining experience!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <img src="spag.jpg" alt="Spaghetti Carbonara">
+            <div>
+                <h3>Spaghetti Carbonara</h3>
+                <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                <p><strong>Price: ₱250 </strong></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="pizza.jpeg" alt="Margherita Pizza">
+            <div>
+                <h3>Margherita Pizza</h3>
+                <p>Fresh mozzarella, tomatoes, and basil on a classic pizza crust.</p>
+                <p><strong>Price: ₱150</strong></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="salad.jpg" alt="Caesar Salad">
+            <div>
+                <h3>Caesar Salad</h3>
+                <p>Crisp romaine lettuce, croutons, and parmesan cheese with Caesar dressing.</p>
+                <p><strong>Price: ₱120</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Delicious Restaurant has been serving the community since 2020. Our chefs are dedicated to providing high-quality meals with a focus on fresh, local ingredients.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to make a reservation, please contact us at:</p>
+        <p>Email: <a href="mail to:Hanzlagmay@gmail.com">Hanzlagmay@gmail.com</a></p>
+        <p>Phone: 09292174816</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Delicious Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
